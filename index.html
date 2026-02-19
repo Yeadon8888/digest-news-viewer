@@ -1,175 +1,160 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digest News Viewer</title>
-    <meta name="description" content="漂亮的 Markdown Digest 阅读页" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digest Atlas</title>
+  <meta name="description" content="高颜值 Digest Markdown 阅读器" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css" />
 
-    <style>
-      :root {
-        --bg: #0b1020;
-        --card: #121a33;
-        --muted: #8ea0c9;
-        --text: #e8eeff;
-        --accent: #7aa2ff;
-      }
+  <style>
+    :root{
+      --bg:#0a0d14;
+      --panel:#0f1524cc;
+      --line:rgba(255,255,255,.12);
+      --text:#eaf0ff;
+      --muted:#9fb0d8;
+      --brand:#6ea8fe;
+      --brand2:#8f7cff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Microsoft YaHei",sans-serif}
 
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-        background: radial-gradient(1200px 800px at 20% -10%, #20305f 0%, transparent 60%),
-                    radial-gradient(1000px 700px at 80% 0%, #3a2258 0%, transparent 60%),
-                    var(--bg);
-        color: var(--text);
-      }
+    .aurora{
+      position:fixed;inset:-20vmax;pointer-events:none;z-index:0;
+      background:
+        radial-gradient(40vmax 35vmax at 15% 10%, rgba(92,154,255,.25), transparent 60%),
+        radial-gradient(34vmax 30vmax at 80% 8%, rgba(168,104,255,.22), transparent 62%),
+        radial-gradient(45vmax 40vmax at 50% 95%, rgba(70,205,255,.16), transparent 60%);
+      filter: blur(24px);
+    }
 
-      .wrap {
-        max-width: 980px;
-        margin: 40px auto;
-        padding: 0 18px 36px;
-      }
+    .page{position:relative;z-index:1;max-width:1180px;margin:28px auto;padding:0 18px 40px}
 
-      .panel {
-        background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 18px;
-        backdrop-filter: blur(8px);
-        box-shadow: 0 14px 50px rgba(0,0,0,.35);
-      }
+    .hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-bottom:14px}
+    .title{font-size:28px;font-weight:800;letter-spacing:.2px;margin:0}
+    .sub{margin-top:6px;color:var(--muted);font-size:14px}
+    .pill{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#cfe0ff;border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.03)}
 
-      .toolbar {
-        padding: 14px;
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        gap: 10px;
-        align-items: center;
-        border-bottom: 1px solid rgba(255,255,255,.08);
-      }
+    .shell{display:grid;grid-template-columns:320px 1fr;gap:14px}
 
-      input[type="text"] {
-        width: 100%;
-        border: 1px solid rgba(255,255,255,.2);
-        background: rgba(255,255,255,.03);
-        color: var(--text);
-        padding: 10px 12px;
-        border-radius: 10px;
-        outline: none;
-      }
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(12px);box-shadow:0 20px 40px rgba(0,0,0,.32)}
 
-      button {
-        border: 1px solid rgba(255,255,255,.2);
-        background: #1a2750;
-        color: #fff;
-        padding: 10px 14px;
-        border-radius: 10px;
-        cursor: pointer;
-      }
-      button:hover { filter: brightness(1.1); }
+    .controls{padding:14px}
+    .controls h3{margin:2px 0 10px;font-size:15px}
+    .label{font-size:12px;color:var(--muted);margin-bottom:6px}
+    .input{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);outline:none}
 
-      .hint {
-        color: var(--muted);
-        font-size: 13px;
-        padding: 0 14px 14px;
-      }
+    .row{display:flex;gap:8px;margin-top:10px}
+    button{border:none;padding:10px 12px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-main{background:linear-gradient(135deg,var(--brand),var(--brand2));color:white;flex:1}
+    .btn-soft{background:rgba(255,255,255,.06);color:#d9e5ff;border:1px solid var(--line)}
 
-      .markdown-body {
-        margin: 16px;
-        padding: 28px;
-        border-radius: 14px;
-        background: #ffffff;
-        color: #24292f;
-      }
+    .quick{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+    .quick a{display:block;color:#bed1ff;text-decoration:none;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+    .quick a:last-child{border-bottom:none}
 
-      .footer {
-        margin-top: 14px;
-        color: var(--muted);
-        font-size: 12px;
-        text-align: center;
-      }
+    .viewer{padding:16px}
+    .markdown-body{max-width:none;border-radius:14px;padding:28px;background:#fff;color:#1f2328;box-shadow:inset 0 0 0 1px #d0d7de}
 
-      @media (max-width: 760px) {
-        .toolbar { grid-template-columns: 1fr; }
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <div class="panel">
-        <div class="toolbar">
-          <input id="source" type="text" placeholder="输入 markdown 路径，如 output/digest-latest.md 或 https://.../digest.md" />
-          <button id="load">渲染</button>
-          <button id="sample">看示例</button>
-        </div>
-        <div class="hint">支持两种方式：1) URL 参数 <code>?src=...</code>；2) 输入框手动加载。</div>
-        <article id="preview" class="markdown-body"></article>
+    .status{color:var(--muted);font-size:12px;padding:0 2px 10px}
+
+    @media (max-width:960px){.shell{grid-template-columns:1fr}.hero{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <h1 class="title">Digest Atlas</h1>
+        <div class="sub">给你的新闻 Digest 一个舒服、干净、专业的阅读容器。</div>
       </div>
-      <div class="footer">Digest News Viewer · GitHub Pages</div>
-    </main>
+      <div class="pill">Markdown · Syntax Highlight · GitHub Pages</div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
-    <script>
-      const preview = document.getElementById('preview');
-      const sourceInput = document.getElementById('source');
+    <section class="shell">
+      <aside class="card controls">
+        <h3>内容源</h3>
+        <div class="label">支持相对路径或完整 URL</div>
+        <input id="source" class="input" type="text" placeholder="例如：output/digest-latest.md" />
+        <div class="row">
+          <button id="load" class="btn-main">渲染内容</button>
+          <button id="sample" class="btn-soft">示例</button>
+        </div>
 
-      marked.setOptions({
-        gfm: true,
-        breaks: true,
-        async: false,
-        highlight(code, lang) {
-          if (lang && hljs.getLanguage(lang)) {
-            return hljs.highlight(code, { language: lang }).value;
-          }
-          return hljs.highlightAuto(code).value;
-        }
-      });
+        <div class="quick">
+          <div class="label">快速入口</div>
+          <a href="?src=output/digest-latest.md">默认 digest</a>
+          <a href="https://github.com/Yeadon8888/digest-news-viewer" target="_blank">仓库</a>
+        </div>
+      </aside>
 
-      async function renderFrom(src) {
-        if (!src) {
-          preview.innerHTML = '<p>请先输入 markdown 地址。</p>';
-          return;
-        }
-        preview.innerHTML = '<p>加载中...</p>';
-        try {
-          const res = await fetch(src);
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          const md = await res.text();
-          preview.innerHTML = marked.parse(md);
-          document.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
-        } catch (e) {
-          preview.innerHTML = `<h3>加载失败</h3><p>${String(e.message || e)}</p><p>如果是跨域地址，请把 markdown 放在同一个仓库目录里再读取。</p>`;
-        }
+      <section class="card viewer">
+        <div id="status" class="status">准备就绪</div>
+        <article id="preview" class="markdown-body"></article>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script>
+    const preview = document.getElementById('preview');
+    const sourceInput = document.getElementById('source');
+    const statusEl = document.getElementById('status');
+
+    marked.setOptions({
+      gfm: true,
+      breaks: true,
+      async: false,
+      highlight(code, lang) {
+        if (lang && hljs.getLanguage(lang)) return hljs.highlight(code, { language: lang }).value;
+        return hljs.highlightAuto(code).value;
       }
+    });
 
-      document.getElementById('load').addEventListener('click', () => {
-        const src = sourceInput.value.trim();
-        if (src) {
-          const url = new URL(location.href);
-          url.searchParams.set('src', src);
-          history.replaceState({}, '', url);
-        }
-        renderFrom(src);
-      });
+    function setStatus(text){ statusEl.textContent = text; }
 
-      document.getElementById('sample').addEventListener('click', () => {
-        sourceInput.value = 'output/digest-latest.md';
-        document.getElementById('load').click();
-      });
+    async function renderFrom(src){
+      if (!src){
+        preview.innerHTML = '<p>请输入 Markdown 地址。</p>';
+        setStatus('未提供内容源');
+        return;
+      }
+      setStatus('加载中：' + src);
+      preview.innerHTML = '<p>加载中...</p>';
+      try{
+        const res = await fetch(src);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const md = await res.text();
+        preview.innerHTML = marked.parse(md);
+        document.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+        setStatus('已渲染：' + src);
+      }catch(e){
+        preview.innerHTML = `<h3>加载失败</h3><p>${String(e.message || e)}</p><p>提示：尽量把 markdown 放在同仓库下，避免跨域限制。</p>`;
+        setStatus('加载失败');
+      }
+    }
 
-      const srcFromUrl = new URLSearchParams(location.search).get('src');
-      sourceInput.value = srcFromUrl || 'output/digest-latest.md';
-      renderFrom(sourceInput.value);
-    </script>
-  </body>
+    document.getElementById('load').addEventListener('click', () => {
+      const src = sourceInput.value.trim();
+      const url = new URL(location.href);
+      url.searchParams.set('src', src);
+      history.replaceState({}, '', url);
+      renderFrom(src);
+    });
+
+    document.getElementById('sample').addEventListener('click', () => {
+      sourceInput.value = 'output/digest-latest.md';
+      document.getElementById('load').click();
+    });
+
+    const src = new URLSearchParams(location.search).get('src') || 'output/digest-latest.md';
+    sourceInput.value = src;
+    renderFrom(src);
+  </script>
+</body>
 </html>
