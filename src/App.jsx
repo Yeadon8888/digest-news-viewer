@@ -18,9 +18,11 @@ export default function App() {
   const [html, setHtml] = useState('<p>加载中...</p>')
   const [status, setStatus] = useState('准备加载')
   const [updated, setUpdated] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   const fetchMd = async (target) => {
     try {
+      setIsLoading(true)
       setStatus('加载中…')
       const bust = `${target}${target.includes('?') ? '&' : '?'}v=${Date.now()}`
       const res = await fetch(bust, { cache: 'no-store' })
@@ -32,6 +34,8 @@ export default function App() {
     } catch (e) {
       setStatus('加载失败')
       setHtml(`<h3>加载失败</h3><p>${e.message}</p><p>请确认路径可访问：${target}</p>`)
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -39,10 +43,18 @@ export default function App() {
 
   const onLoad = () => {
     const s = input.trim()
+    if (!s) return
     const u = new URL(location.href)
     u.searchParams.set('src', s)
     history.replaceState({}, '', u)
     setSrc(s)
+  }
+
+  const onRefresh = () => fetchMd(src)
+
+  const onCopyLink = async () => {
+    await navigator.clipboard.writeText(location.href)
+    setStatus('链接已复制')
   }
 
   const quick = useMemo(() => [
@@ -53,8 +65,14 @@ export default function App() {
   return (
     <main className="page">
       <header className="hero">
-        <h1>Digest Atlas</h1>
-        <p>苹果风现代阅读页 · React 渲染 · 适配移动端</p>
+        <div>
+          <h1>Daily Digest</h1>
+          <p>简洁、清晰、适配移动端的阅读页</p>
+        </div>
+        <div className="hero-actions">
+          <button className="ghost" onClick={onCopyLink}>复制链接</button>
+          <button onClick={onRefresh}>刷新</button>
+        </div>
       </header>
 
       <section className="panel">
@@ -69,8 +87,13 @@ export default function App() {
           ))}
         </div>
 
-        <div className="meta">状态：{status} {updated ? `· 更新于 ${updated}` : ''}</div>
-        <article className="markdown-body" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="meta">
+          <span>状态：{status}</span>
+          {updated ? <span>更新于 {updated}</span> : null}
+          <span>源：{src}</span>
+        </div>
+
+        <article className={`markdown-body ${isLoading ? 'loading' : ''}`} dangerouslySetInnerHTML={{ __html: html }} />
       </section>
     </main>
   )
