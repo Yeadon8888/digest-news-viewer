@@ -1,44 +1,44 @@
-# 📰 AI 博客每日精选 — 2026-02-19
+# 📰 AI 博客每日精选 — 2026-02-21
 
 > 来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15
 
 ## 📝 今日看点
 
-今日看点：AI 发展持续引发热议，一方面，Anthropic 发布了性能优异且定价合理的 Claude Sonnet 4.6，另一方面，AI 对软件开发格局的潜在颠覆以及 AGI 炒作的合理性引发了广泛讨论。此外，在 AI 时代，如何平衡技术进步与人文关怀，以及如何应对 AI 生成内容带来的挑战，也成为技术圈关注的焦点。
+今日看点：AI 领域持续火热，模型性能不断突破，本地 AI 发展备受关注。网络安全威胁日益复杂，新型钓鱼手段更具迷惑性。此外，老牌技术如 ActivityPub 依然活跃，展现了技术的生命力。
 
 ---
 
 ## 🏆 今日必读
 
-🥇 **Claude Sonnet 4.6 发布**
+🥇 **“星际杀手”网络钓鱼服务代理真实登录页面和多因素认证**
 
-[Introducing Claude Sonnet 4.6](https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything) — simonwillison.net · 1 天前 · 🤖 AI / ML
+[‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA](https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/) — krebsonsecurity.com · 10 小时前 · 🔒 安全
 
-> Anthropic 发布了 Claude Sonnet 4.6，声称其性能与去年 11 月的 Opus 4.5 相似，但保持了 Sonnet 的定价：输入 3 美元/百万 token，输出 15 美元/百万 token（Opus 模型为 5 美元/25 美元）。这意味着用户可以在更低的价格下获得接近顶级模型的性能。Anthropic 旨在通过 Sonnet 4.6 提供性价比更高的选择，从而扩大其 AI 模型的应用范围。该模型在性能和成本之间取得了平衡。
+> 传统的网络钓鱼网站通常只是流行网站登录页面的静态副本，容易被反滥用组织和安全公司迅速下线。而“星际杀手”(Starkiller) 是一种新型钓鱼即服务，它通过巧妙伪装的链接加载目标品牌的真实网站，充当目标和合法站点之间的中继，转发受害者的用户名、密码和多因素认证信息。这种方式绕过了传统钓鱼网站的两个主要缺陷：容易被检测和快速下线。Starkiller 的出现表明网络钓鱼攻击正在变得更加复杂和隐蔽。
 
-💡 **为什么值得读**: 如果你想了解 Anthropic 最新模型的性价比如何，以及它在性能和价格之间做了什么权衡，这篇文章值得一读。
+💡 **为什么值得读**: 了解 Starkiller 的运作方式有助于防御更复杂的网络钓鱼攻击。
 
-🏷️ Claude Sonnet 4.6, Anthropic, LLM, AI model
+🏷️ phishing, MFA, Starkiller
 
-🥈 **我们期待的 AI 变革已经到来**
+🥈 **Taalas 以每秒 17,000 个 tokens 的速度运行 Llama 3.1 8B 模型**
 
-[The A.I. Disruption We’ve Been Waiting for Has Arrived](https://simonwillison.net/2026/Feb/18/the-ai-disruption/#atom-everything) — simonwillison.net · 22 小时前 · 💡 观点 / 杂谈
+[Taalas serves Llama 3.1 8B at 17,000 tokens/second](https://simonwillison.net/2026/Feb/20/taalas/#atom-everything) — simonwillison.net · 8 小时前 · 🤖 AI / ML
 
-> Paul Ford 在《纽约时报》发表了一篇关于 AI 变革的评论文章，强调了 AI 正在带来的颠覆性影响。文章指出，AI 正在改变软件开发的格局，并引发了关于技术未来方向的讨论。作者引用了文章中的一些精彩片段，例如关于“11 月时刻”的描述，暗示 AI 发展的重要节点。这篇文章引发了人们对 AI 影响的深刻思考。
+> 加拿大硬件初创公司 Taalas 发布了其首款产品，这是一个定制硬件实现的 Llama 3.1 8B 模型，能够以惊人的 17,000 tokens/秒的速度运行。该模型基于 2024 年 7 月发布的 Llama 3.1 版本。这一速度的突破展示了专用硬件在加速大型语言模型推理方面的潜力。
 
-💡 **为什么值得读**: 如果你想了解 AI 如何重塑软件开发，以及它对未来技术发展方向的影响，这篇文章会给你带来启发。
+💡 **为什么值得读**: 该文章展示了硬件创新如何显著提升 LLM 的性能，值得关注。
 
-🏷️ AI, disruption, software, Paul Ford
+🏷️ Llama 3, hardware, AI
 
-🥉 **引用 Martin Fowler**
+🥉 **ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展**
 
-[Quoting Martin Fowler](https://simonwillison.net/2026/Feb/18/martin-fowler/#atom-everything) — simonwillison.net · 22 小时前 · 🤖 AI / ML
+[ggml.ai joins Hugging Face to ensure the long-term progress of Local AI](https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything) — simonwillison.net · 13 小时前 · 🤖 AI / ML
 
-> Martin Fowler 认为，大型语言模型（LLM）正在蚕食专业技能，未来对前端和后端开发人员的需求将减少，而驱动 LLM 的技能将变得更加重要。他提出，这可能会导致人们更加重视“专家通才”的角色。或者，LLM 编写大量代码的能力可能会导致它们绕过孤岛进行编码，而不是打破孤岛。
+> ggml.ai 加入 Hugging Face，旨在确保本地 AI 的长期发展。Georgi Gerganov 对本地模型领域产生了深远的影响，他在 2023 年 3 月发布的 llama.cpp 使在消费级硬件上运行本地 LLM 成为可能。此次收购预示着 Hugging Face 将进一步投入本地 AI 领域。
 
-💡 **为什么值得读**: 如果你想了解 LLM 如何改变软件开发的角色和技能需求，以及未来开发人员应该如何发展，这篇文章值得思考。
+💡 **为什么值得读**: 了解 ggml.ai 加入 Hugging Face 的意义，有助于把握本地 AI 技术的发展趋势。
 
-🏷️ LLM, Martin Fowler, specialty skills, developers
+🏷️ ggml, Hugging Face, Local AI
 
 ---
 
@@ -46,17 +46,19 @@
 
 | 扫描源 | 抓取文章 | 时间范围 | 精选 |
 |:---:|:---:|:---:|:---:|
-| 89/92 | 2503 篇 → 37 篇 | 48h | **15 篇** |
+| 88/92 | 2494 篇 → 27 篇 | 48h | **15 篇** |
 
 ### 分类分布
 
 ```mermaid
 pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 6
-    "💡 观点 / 杂谈" : 5
-    "⚙️ 工程" : 2
-    "🛠 工具 / 开源" : 2
+    "🤖 AI / ML" : 7
+    "⚙️ 工程" : 4
+    "🔒 安全" : 1
+    "🛠 工具 / 开源" : 1
+    "💡 观点 / 杂谈" : 1
+    "📝 其他" : 1
 ```
 
 ### 高频关键词
@@ -64,193 +66,197 @@ pie showData
 ```mermaid
 xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai", "llm", "disruption", "claude sonnet 4.6", "anthropic", "ai model", "software", "paul ford", "martin fowler", "specialty skills", "developers", "technology"]
-    y-axis "出现次数" 0 --> 8
-    bar [6, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    x-axis ["ai", "llm", "dialog manager", "phishing", "mfa", "starkiller", "llama 3", "hardware", "ggml", "hugging face", "local ai", "gemini 3.1 pro"]
+    y-axis "出现次数" 0 --> 4
+    bar [2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
 <details>
 <summary>📈 纯文本关键词图（终端友好）</summary>
 
 ```
-ai                │ ████████████████████ 6
-llm               │ ███████░░░░░░░░░░░░░ 2
-disruption        │ ███████░░░░░░░░░░░░░ 2
-claude sonnet 4.6 │ ███░░░░░░░░░░░░░░░░░ 1
-anthropic         │ ███░░░░░░░░░░░░░░░░░ 1
-ai model          │ ███░░░░░░░░░░░░░░░░░ 1
-software          │ ███░░░░░░░░░░░░░░░░░ 1
-paul ford         │ ███░░░░░░░░░░░░░░░░░ 1
-martin fowler     │ ███░░░░░░░░░░░░░░░░░ 1
-specialty skills  │ ███░░░░░░░░░░░░░░░░░ 1
+ai             │ ████████████████████ 2
+llm            │ ████████████████████ 2
+dialog manager │ ████████████████████ 2
+phishing       │ ██████████░░░░░░░░░░ 1
+mfa            │ ██████████░░░░░░░░░░ 1
+starkiller     │ ██████████░░░░░░░░░░ 1
+llama 3        │ ██████████░░░░░░░░░░ 1
+hardware       │ ██████████░░░░░░░░░░ 1
+ggml           │ ██████████░░░░░░░░░░ 1
+hugging face   │ ██████████░░░░░░░░░░ 1
 ```
 
 </details>
 
 ### 🏷️ 话题标签
 
-**ai**(6) · **llm**(2) · **disruption**(2) · claude sonnet 4.6(1) · anthropic(1) · ai model(1) · software(1) · paul ford(1) · martin fowler(1) · specialty skills(1) · developers(1) · technology(1) · open source(1) · ai-generated content(1) · gatekeeping(1) · type hints(1) · strong typing(1) · repl(1) · programming(1) · thinking(1)
+**ai**(2) · **llm**(2) · **dialog manager**(2) · phishing(1) · mfa(1) · starkiller(1) · llama 3(1) · hardware(1) · ggml(1) · hugging face(1) · local ai(1) · gemini 3.1 pro(1) · google(1) · nand(1) · ssd(1) · chip demand(1) · activitypub(1) · federated protocol(1) · social network(1) · anthropic(1)
 
 ---
 
 ## 🤖 AI / ML
 
-### 1. Claude Sonnet 4.6 发布
+### 1. Taalas 以每秒 17,000 个 tokens 的速度运行 Llama 3.1 8B 模型
 
-[Introducing Claude Sonnet 4.6](https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 25/30
+[Taalas serves Llama 3.1 8B at 17,000 tokens/second](https://simonwillison.net/2026/Feb/20/taalas/#atom-everything) — **simonwillison.net** · 8 小时前 · ⭐ 22/30
 
-> Anthropic 发布了 Claude Sonnet 4.6，声称其性能与去年 11 月的 Opus 4.5 相似，但保持了 Sonnet 的定价：输入 3 美元/百万 token，输出 15 美元/百万 token（Opus 模型为 5 美元/25 美元）。这意味着用户可以在更低的价格下获得接近顶级模型的性能。Anthropic 旨在通过 Sonnet 4.6 提供性价比更高的选择，从而扩大其 AI 模型的应用范围。该模型在性能和成本之间取得了平衡。
+> 加拿大硬件初创公司 Taalas 发布了其首款产品，这是一个定制硬件实现的 Llama 3.1 8B 模型，能够以惊人的 17,000 tokens/秒的速度运行。该模型基于 2024 年 7 月发布的 Llama 3.1 版本。这一速度的突破展示了专用硬件在加速大型语言模型推理方面的潜力。
 
-🏷️ Claude Sonnet 4.6, Anthropic, LLM, AI model
-
----
-
-### 2. 引用 Martin Fowler
-
-[Quoting Martin Fowler](https://simonwillison.net/2026/Feb/18/martin-fowler/#atom-everything) — **simonwillison.net** · 22 小时前 · ⭐ 23/30
-
-> Martin Fowler 认为，大型语言模型（LLM）正在蚕食专业技能，未来对前端和后端开发人员的需求将减少，而驱动 LLM 的技能将变得更加重要。他提出，这可能会导致人们更加重视“专家通才”的角色。或者，LLM 编写大量代码的能力可能会导致它们绕过孤岛进行编码，而不是打破孤岛。
-
-🏷️ LLM, Martin Fowler, specialty skills, developers
+🏷️ Llama 3, hardware, AI
 
 ---
 
-### 3. 关于 AGI 到来的谣言被大大夸大了
+### 2. ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展
 
-[Rumors of AGI’s arrival have been greatly exaggerated](https://garymarcus.substack.com/p/rumors-of-agis-arrival-have-been) — **garymarcus.substack.com** · 1 天前 · ⭐ 22/30
+[ggml.ai joins Hugging Face to ensure the long-term progress of Local AI](https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything) — **simonwillison.net** · 13 小时前 · ⭐ 22/30
 
-> 文章指出，统计近似并不等同于通用人工智能（AGI）。作者认为，目前对 AGI 的炒作过于夸大，需要理性看待。
+> ggml.ai 加入 Hugging Face，旨在确保本地 AI 的长期发展。Georgi Gerganov 对本地模型领域产生了深远的影响，他在 2023 年 3 月发布的 llama.cpp 使在消费级硬件上运行本地 LLM 成为可能。此次收购预示着 Hugging Face 将进一步投入本地 AI 领域。
 
-🏷️ AGI, general intelligence, statistical approximation
-
----
-
-### 4. 我们是如何最终用AI威胁孩子们的生命安全的？
-
-[How did we end up threatening our kids’ lives with AI?](https://anildash.com/2026/02/18/threatening-kids-with-AI/) — **anildash.com** · 1 天前 · ⭐ 22/30
-
-> 大型AI公司在儿童相关问题上的选择令人担忧，本文探讨了这种选择可能带来的严重后果。文章指出，AI技术的发展可能对儿童造成无法想象的伤害，并呼吁对当前技术发展进行深刻反思。作者认为，如果我们要对当代技术进行诚实的对话，就必须正视这个问题。这种威胁并非轻描淡写，而是真实存在的。
-
-🏷️ AI, children, ethics
+🏷️ ggml, Hugging Face, Local AI
 
 ---
 
-### 5. SWE-bench 2026年2月排行榜更新
+### 3. Gemini 3.1 Pro
 
-[SWE-bench February 2026 leaderboard update](https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything) — **simonwillison.net** · 10 小时前 · ⭐ 21/30
+[Gemini 3.1 Pro](https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 22/30
 
-> SWE-bench是评估代码生成模型性能的基准测试之一，各大实验室经常在模型发布时引用其结果。本次更新发布了针对当前一代模型的完整测试结果，这些结果并非由实验室自行报告，更具客观性。该排行榜提供了评估不同模型在“Bash Only”基准测试下的性能表现，方便开发者进行参考。
+> Google 发布了 Gemini 3.1 Pro，这是 Gemini 3.1 系列的首款产品，定价与 Gemini 3 Pro 相同（低于 20 万 tokens 时，输入 2 美元/百万 tokens，输出 12 美元/百万 tokens；20 万到 100 万 tokens 时，输入 4 美元/百万 tokens，输出 18 美元/百万 tokens）。其价格不到 Claude Opus 4.6 的一半，但基准测试分数非常相似。Gemini 3.1 Pro 在 SVG 动画性能方面也优于 Gemini 3 Pro。
 
-🏷️ SWE-bench, benchmark, leaderboard, AI models
-
----
-
-### 6. AI 是 NAND 容量最大化者
-
-[AI is a NAND Maximiser](https://shkspr.mobi/blog/2026/02/ai-is-a-nand-maximiser/) — **shkspr.mobi** · 2 小时前 · ⭐ 21/30
-
-> AI公司对计算机芯片的巨大需求正在对整个行业产生灾难性的影响。Phison的CEO指出，如果NVIDIA Vera Rubin出货数千万台，每台需要20+TB的SSD，将消耗去年全球NAND闪存产能的约20%。NAND闪存是一种微芯片，用于存储数据。
-
-🏷️ AI, NAND, SSD, chip shortage
+🏷️ Gemini 3.1 Pro, Google, LLM
 
 ---
 
-## 💡 观点 / 杂谈
+### 4. AI 是 NAND 的最大化者
 
-### 7. 我们期待的 AI 变革已经到来
+[AI is a NAND Maximiser](https://shkspr.mobi/blog/2026/02/ai-is-a-nand-maximiser/) — **shkspr.mobi** · 1 天前 · ⭐ 22/30
 
-[The A.I. Disruption We’ve Been Waiting for Has Arrived](https://simonwillison.net/2026/Feb/18/the-ai-disruption/#atom-everything) — **simonwillison.net** · 22 小时前 · ⭐ 23/30
+> PC Gamer 报道称，当前 AI 公司对计算机芯片的需求对整个行业产生了灾难性的影响。Phison 的 CEO 表示，如果 NVIDIA Vera Rubin 出货数千万台，每台需要 20+TB 的 SSD，这将消耗去年全球 NAND 产量的大约 20%。这意味着 AI 发展对硬件资源的需求正在挤压其他行业。
 
-> Paul Ford 在《纽约时报》发表了一篇关于 AI 变革的评论文章，强调了 AI 正在带来的颠覆性影响。文章指出，AI 正在改变软件开发的格局，并引发了关于技术未来方向的讨论。作者引用了文章中的一些精彩片段，例如关于“11 月时刻”的描述，暗示 AI 发展的重要节点。这篇文章引发了人们对 AI 影响的深刻思考。
-
-🏷️ AI, disruption, software, Paul Ford
+🏷️ AI, NAND, SSD, Chip Demand
 
 ---
 
-### 8. Paul Ford: ‘AI 变革已经到来，而且真的很有趣’
+### 5. 高级版：Anthropic 仇恨者指南
 
-[Paul Ford: ‘The A.I. Disruption Has Arrived, and It Sure Is Fun’](https://www.nytimes.com/2026/02/18/opinion/ai-software.html?unlocked_article_code=1.NFA.djaw.TBlAp8kE_N-i) — **daringfireball.net** · 18 小时前 · ⭐ 23/30
+[Premium: The Hater's Guide to Anthropic](https://www.wheresyoured.at/premium-the-haters-guide-to-anthropic/) — **wheresyoured.at** · 12 小时前 · ⭐ 22/30
 
-> Paul Ford 在《纽约时报》发表了一篇评论文章，表达了他对 AI 变革的兴奋之情，尽管他身边很多人对此持负面态度。他承认 AI 带来的争议，但仍然对技术进步的可能性感到乐观。
+> Dario Amodei 和一群前 OpenAI 研究人员于 2021 年 5 月成立了 Anthropic，致力于构建最安全的（也可能是最令人讨厌的）大型语言模型公司。
 
-🏷️ AI, disruption, technology
-
----
-
-### 9. 支持门卫制度的理由，或者：为什么中世纪的行会想明白了
-
-[The case for gatekeeping, or: why medieval guilds had it figured out](https://www.joanwestenberg.com/the-case-for-gatekeeping-or-why-medieval-guilds-had-it-figured-out/) — **joanwestenberg.com** · 1 天前 · ⭐ 23/30
-
-> 许多开源维护者抱怨，大量由 AI 生成的垃圾提交请求涌入，使他们的代码仓库不堪重负。这些提交看起来像是真实的贡献，包含提交信息，引用 issue，并且遵循代码规范，但实际上质量很低。文章探讨了在 AI 生成内容泛滥的情况下，维护代码质量和社区秩序的必要性，并借鉴了中世纪行会的管理经验。
-
-🏷️ open source, AI-generated content, gatekeeping
+🏷️ Anthropic, LLM, AI safety
 
 ---
 
-### 10. 思考促进思考
+### 6. 引用 Thariq Shihipar
 
-[Thinking Improves Thinking](https://idiallo.com/blog/taking-our-mind-for-granted?src=feed) — **idiallo.com** · 1 天前 · ⭐ 22/30
+[Quoting Thariq Shihipar](https://simonwillison.net/2026/Feb/20/thariq-shihipar/#atom-everything) — **simonwillison.net** · 23 小时前 · ⭐ 19/30
 
-> 文章探讨了在 ChatGPT 出现之前，人们如何进行深度思考和解决问题。作者认为，关键在于忍受不适，直到解决方案出现。通过长时间的思考，即使是在散步时，人们也能找到问题的答案。
+> Thariq Shihipar 指出，像 Claude Code 这样长期运行的 Agentic 产品之所以可行，是因为使用了 prompt 缓存，这允许重复使用先前往返的计算，并显著降低延迟和成本。Claude Code 将整个 harness 构建在 prompt 缓存之上，高 prompt 缓存命中率降低了成本，并有助于为订阅计划创建更宽松的速率限制。
 
-🏷️ thinking, ChatGPT, problem solving
+🏷️ Claude Code, prompt caching, latency
 
 ---
 
-### 11. 关于关怀的一些漫谈观察
+### 7. 引用 Thibault Sottiaux
 
-[A Few Rambling Observations on Care](https://blog.jim-nielsen.com/2026/observations-on-care/) — **blog.jim-nielsen.com** · 20 小时前 · ⭐ 22/30
+[Quoting Thibault Sottiaux](https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything) — **simonwillison.net** · 5 小时前 · ⭐ 17/30
 
-> 在新的 AI 世界中，“品味”被认为是至高无上的技能。但作者认为，“关怀”才是他在购买产品时最想看到的。文章探讨了如何衡量关怀，以及规模化是否会驱逐关怀。如果产品讨论仅仅由数字来仲裁，那么关怀是否会丢失？
+> OpenAI 的 Thibault Sottiaux 宣布 GPT-5.3-Codex-Spark 的速度提升了 30%，现在可以达到每秒 1200 个 token 的处理速度。这一性能提升表明了 OpenAI 在大型语言模型优化方面的进展。
 
-🏷️ AI, taste, care
+🏷️ GPT, performance, tokens per second
 
 ---
 
 ## ⚙️ 工程
 
-### 12. 无需打字的打字
+### 8. ActivityPub
 
-[Typing without having to type](https://simonwillison.net/2026/Feb/18/typing/#atom-everything) — **simonwillison.net** · 20 小时前 · ⭐ 22/30
+[ActivityPub](https://nesbitt.io/2026/02/20/activitypub.html) — **nesbitt.io** · 1 天前 · ⭐ 22/30
 
-> 作者在 25 年的编程生涯后，开始倾向于类型提示甚至强类型。过去他抵制这些，因为它们会降低代码迭代速度，尤其是在 REPL 环境中。但如果编码代理可以完成所有的“打字”工作，那么显式定义所有类型的好处就变得更有吸引力。
+> ActivityPub 是一种用于发布活动信息的联邦协议，于 1714 年首次标准化，至今仍在 46,000 个活跃实例中使用。
 
-🏷️ type hints, strong typing, REPL, programming
+🏷️ ActivityPub, federated protocol, social network
 
 ---
 
-### 13. 在树莓派上使用 Hailo 加速 Frigate 进行物体检测
+### 9. 无以承受的冗余之重
 
-[Frigate with Hailo for object detection on a Raspberry Pi](https://www.jeffgeerling.com/blog/2026/frigate-with-hailo-for-object-detection-on-a-raspberry-pi/) — **jeffgeerling.com** · 18 小时前 · ⭐ 21/30
+[The unbearable weight of cruft](https://www.joanwestenberg.com/the-unbearable-weight-of-cruft/) — **joanwestenberg.com** · 7 小时前 · ⭐ 19/30
 
-> 本文介绍了如何在树莓派上使用Frigate进行安全摄像头录制和物体检测，并利用Hailo AI加速器提升性能。作者之前的Frigate服务器使用树莓派CM4和Coral TPU，通过USB连接。现在，树莓派提供了多种带有内置AI加速器的AI HAT+，可以进一步提升物体检测的效率。
+> （文章内容缺失，无法生成摘要和推荐理由）
 
-🏷️ Frigate, Hailo, object detection, Raspberry Pi
+🏷️ cruft, software, technical debt
+
+---
+
+### 10. 自定义对话框管理器关闭自身的方式：检测 ESC 键，首次（失败）尝试
+
+[Customizing the ways the dialog manager dismisses itself: Detecting the ESC key, first (failed) attempt](https://devblogs.microsoft.com/oldnewthing/20260220-00/?p=112074) — **devblogs.microsoft.com/oldnewthing** · 15 小时前 · ⭐ 18/30
+
+> 文章讨论了如何自定义对话框管理器关闭自身的方式，重点在于检测 ESC 键。文章记录了作者首次尝试检测 ESC 键的失败经历，并涉及异步键盘状态的嗅探。虽然首次尝试失败，但为后续的解决方案提供了经验。
+
+🏷️ Dialog Manager, ESC Key, Keyboard State
+
+---
+
+### 11. 探索对话框管理器用于关闭对话框的信号
+
+[Exploring the signals the dialog manager uses for dismissing a dialog](https://devblogs.microsoft.com/oldnewthing/20260219-00/?p=112072) — **devblogs.microsoft.com/oldnewthing** · 1 天前 · ⭐ 18/30
+
+> 文章概述了对话框管理器关闭对话框时使用的信号流程。文章对整个流程进行了总结，旨在帮助开发者理解对话框管理器的运作机制。
+
+🏷️ Dialog Manager, Dismissing, Signals
+
+---
+
+## 🔒 安全
+
+### 12. “星际杀手”网络钓鱼服务代理真实登录页面和多因素认证
+
+[‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA](https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/) — **krebsonsecurity.com** · 10 小时前 · ⭐ 25/30
+
+> 传统的网络钓鱼网站通常只是流行网站登录页面的静态副本，容易被反滥用组织和安全公司迅速下线。而“星际杀手”(Starkiller) 是一种新型钓鱼即服务，它通过巧妙伪装的链接加载目标品牌的真实网站，充当目标和合法站点之间的中继，转发受害者的用户名、密码和多因素认证信息。这种方式绕过了传统钓鱼网站的两个主要缺陷：容易被检测和快速下线。Starkiller 的出现表明网络钓鱼攻击正在变得更加复杂和隐蔽。
+
+🏷️ phishing, MFA, Starkiller
 
 ---
 
 ## 🛠 工具 / 开源
 
-### 14. Markdown 的时刻
+### 13. CloudPebble 回归！以及新的纯 JavaScript 和 Round 2 SDK
 
-[Markdown’s Moment](https://feed.tedium.co/link/15204/17278321/markdown-growing-influence-cloudflare-ai) — **tedium.co** · 1 天前 · ⭐ 22/30
+[CloudPebble Returns! Plus New Pure JavaScript and Round 2 SDK](https://repebble.com/blog/cloudpebble-returns-plus-pure-javascript-and-round-2-sdk) — **ericmigi.com** · 1 天前 · ⭐ 19/30
 
-> 许多大型公司现在都在大力推广 Markdown。这可能与 AI 有关，但作者认为这可能会带来一些意想不到的好处。
+> CloudPebble 重新回归，同时 Pebble 的 SDK 和开发者工具也进行了多项改进，包括新的纯 JavaScript 支持和 Round 2 SDK。
 
-🏷️ Markdown, AI, text formatting
-
----
-
-### 15. Rodney v0.4.0 发布
-
-[Rodney v0.4.0](https://simonwillison.net/2026/Feb/17/rodney/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 21/30
-
-> Rodney是一个用于浏览器自动化的CLI工具，在发布后吸引了大量的PR。v0.4.0版本主要改进包括：错误现在使用退出代码，修复了`rodney install`命令中的一个错误，并添加了`--version`参数。
-
-🏷️ Rodney, CLI, browser automation, tool
+🏷️ Pebble, CloudPebble, JavaScript, SDK
 
 ---
 
-*生成于 2026-02-19 15:17 | 扫描 89 源 → 获取 2503 篇 → 精选 15 篇*
+## 💡 观点 / 杂谈
+
+### 14. 未来是否会是“万物皆AWS”？
+
+[Is the Future “AWS for Everything”?](https://www.construction-physics.com/p/is-the-future-aws-for-everything) — **construction-physics.com** · 1 天前 · ⭐ 19/30
+
+> 文章探讨了效率提升与产品低成本化，是否依赖于生产过程的重复性。作者认为，历史上产品变得更便宜的方法都依赖于一定程度的重复生产。文章的核心在于探讨这种重复性在未来是否会像AWS一样成为一种普遍模式，渗透到各个领域。这暗示了未来生产模式可能朝着更加标准化和模块化的方向发展。
+
+🏷️ AWS, efficiency, repetition, production
+
+---
+
+## 📝 其他
+
+### 15. Pluralistic：一个被打穿的公司面纱 (2026年2月20日)
+
+[Pluralistic: A perforated corporate veil (20 Feb 2026)](https://pluralistic.net/2026/02/20/karioca-konzernrecht/) — **pluralistic.net** · 15 小时前 · ⭐ 18/30
+
+> 该文章汇总了多个链接，涉及公司权力限制、社交媒体对政治的影响、以及与斯诺登和吉布森的对话等多个主题。文章提到了巴西限制公司权力的方法，以及社交媒体如何将美国政党转变为第三方寄生宿主。此外，还包括对投保外骨骼和与爱德华·斯诺登、威廉·吉布森对话的讨论。文章还列出了作者近期的和即将参加的活动，以及最新的和即将出版的书籍。
+
+🏷️ Corporate Power, Social Media, Politics
+
+---
+
+*生成于 2026-02-21 06:36 | 扫描 88 源 → 获取 2494 篇 → 精选 15 篇*
 *基于 [Hacker News Popularity Contest 2025](https://refactoringenglish.com/tools/hn-popularity/) RSS 源列表，由 [Andrej Karpathy](https://x.com/karpathy) 推荐*
 *由「懂点儿AI」制作，欢迎关注同名微信公众号获取更多 AI 实用技巧 💡*
