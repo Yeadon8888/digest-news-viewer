@@ -19,6 +19,7 @@ export default function App() {
   const [status, setStatus] = useState('准备加载')
   const [updated, setUpdated] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [showControls, setShowControls] = useState(false)
 
   const fetchMd = async (target) => {
     try {
@@ -66,33 +67,42 @@ export default function App() {
     <main className="page">
       <header className="hero">
         <div>
-          <h1>Daily Digest</h1>
-          <p>简洁、清晰、适配移动端的阅读页</p>
+          <h1>AI Daily Digest</h1>
+          <p>更像日报杂志的阅读体验</p>
         </div>
         <div className="hero-actions">
+          <button className="ghost" onClick={() => setShowControls((v) => !v)}>{showControls ? '收起设置' : '展开设置'}</button>
           <button className="ghost" onClick={onCopyLink}>复制链接</button>
           <button onClick={onRefresh}>刷新</button>
         </div>
       </header>
 
-      <section className="panel">
-        <div className="toolbar">
-          <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="/data/digest-latest.md" />
-          <button onClick={onLoad}>加载</button>
-        </div>
+      {showControls && (
+        <section className="panel controls">
+          <div className="toolbar">
+            <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="/data/digest-latest.md" />
+            <button onClick={onLoad}>加载</button>
+          </div>
+          <div className="quick">
+            {quick.map((q) => (
+              <button key={q.label} className="ghost" onClick={() => { setInput(q.value); setSrc(q.value) }}>{q.label}</button>
+            ))}
+          </div>
+          <div className="meta compact">
+            <span>状态：{status}</span>
+            {updated ? <span>更新于 {updated}</span> : null}
+            <span>源：{src}</span>
+          </div>
+        </section>
+      )}
 
-        <div className="quick">
-          {quick.map((q) => (
-            <button key={q.label} className="ghost" onClick={() => { setInput(q.value); setSrc(q.value) }}>{q.label}</button>
-          ))}
-        </div>
-
-        <div className="meta">
-          <span>状态：{status}</span>
-          {updated ? <span>更新于 {updated}</span> : null}
-          <span>源：{src}</span>
-        </div>
-
+      <section className="panel reader">
+        {!showControls && (
+          <div className="meta">
+            <span>{status}</span>
+            {updated ? <span>更新于 {updated}</span> : null}
+          </div>
+        )}
         <article className={`markdown-body ${isLoading ? 'loading' : ''}`} dangerouslySetInnerHTML={{ __html: html }} />
       </section>
     </main>
