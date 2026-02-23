@@ -1,44 +1,44 @@
-# 📰 AI 博客每日精选 — 2026-02-22
+# 📰 AI 博客每日精选 — 2026-02-23
 
 > 来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15
 
 ## 📝 今日看点
 
-今日看点：AI模型性能持续突破，加速方案层出不穷，本地AI生态蓬勃发展。安全方面，新型钓鱼攻击手段升级，防御难度增加。此外，大型开源项目消亡后的影响以及LLM之上的新应用层（如Claws）也引发关注。
+今日看点：AI领域持续火热，GPT模型速度再获突破，英伟达与OpenAI的投资关系引人关注。同时，比特币挖矿难度和哈希算力持续攀升，反映了加密货币领域的活跃度。此外，开发者需关注代码托管平台中特殊文件夹的作用，提升开发效率。
 
 ---
 
 ## 🏆 今日必读
 
-🥇 **“星际杀手”钓鱼服务：代理真实登录页面和多因素认证**
+🥇 **Forge 特定的仓库文件夹**
 
-[‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA](https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/) — krebsonsecurity.com · 1 天前 · 🔒 安全
+[Forge-Specific Repository Folders](https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html) — nesbitt.io · 14 小时前 · ⚙️ 工程
 
-> 传统的钓鱼网站通常是流行网站登录页面的静态副本，容易被反滥用组织和安全公司迅速查封。而新型钓鱼即服务（Phishing-as-a-Service）“星际杀手”（Starkiller）通过伪装链接加载目标品牌的真实网站，充当目标和合法站点之间的中继，从而绕过这些限制。它会转发受害者的用户名、密码和多因素认证信息。这种服务隐蔽性更强，更难被检测和取缔。
+> 本文介绍了 Git 代码托管平台（Forge）中一些特殊的“魔法文件夹”的作用。这些文件夹包括 `.github/`、`.gitlab/`、`.gitea/`、`.forgejo/` 和 `.bitbucket/`。它们允许开发者针对特定的代码托管平台定制仓库的行为，例如配置 CI/CD 流程、问题模板等。了解这些文件夹的用途可以帮助开发者更好地利用不同平台的特性，提高开发效率。
 
-💡 **为什么值得读**: 了解新型钓鱼攻击的手段，有助于提高安全意识，防范网络诈骗。
+💡 **为什么值得读**: 如果你经常使用多个 Git 代码托管平台，了解这些平台特定的文件夹能让你更高效地管理你的项目。
 
-🏷️ phishing, Starkiller, MFA, login pages
+🏷️ git, repository, CI/CD, configuration
 
-🥈 **Taalas 以每秒 17,000 个 tokens 的速度提供 Llama 3.1 8B 模型服务**
+🥈 **我对 Codex 的理解**
 
-[Taalas serves Llama 3.1 8B at 17,000 tokens/second](https://simonwillison.net/2026/Feb/20/taalas/#atom-everything) — simonwillison.net · 1 天前 · 🤖 AI / ML
+[How I think about Codex](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything) — simonwillison.net · 8 小时前 · 🤖 AI / ML
 
-> 加拿大初创公司 Taalas 发布了其首款产品，这是一款 Llama 3.1 8B 模型的定制硬件实现，能够以惊人的 17,000 tokens/秒的速度运行。该硬件加速方案显著提升了 Llama 3.1 8B 模型的推理速度。这表明专用硬件在加速特定 AI 模型方面具有巨大潜力。
+> 本文阐述了 OpenAI 的 APAC 开发者体验工程师 Gabriel Chua 对“Codex”一词的理解。Codex 在 OpenAI 生态系统中可以指代多种不同的事物，容易造成混淆。Chua 认为 Codex 本质上是 OpenAI 的软件工程代理，可以通过多种接口访问，并且是一个模型加上指令的组合。
 
-💡 **为什么值得读**: 关注AI硬件加速的最新进展，了解专用硬件如何提升LLM性能。
+💡 **为什么值得读**: 如果你对 OpenAI 的 Codex 技术感兴趣，这篇文章能帮助你理清关于 Codex 的一些概念。
 
-🏷️ Llama 3.1, Taalas, hardware, AI
+🏷️ Codex, OpenAI, terminology
 
-🥉 **Thibault Sottiaux 引言**
+🥉 **资本主义的伟大拉链**
 
-[Quoting Thibault Sottiaux](https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything) — simonwillison.net · 22 小时前 · 🤖 AI / ML
+[The Great Zipper of Capitalism](https://worksonmymachine.ai/p/the-great-zipper-of-capitalism) — worksonmymachine.substack.com · 9 小时前 · 💡 观点 / 杂谈
 
-> OpenAI 的 Thibault Sottiaux 宣布 GPT-5.3-Codex-Spark 的速度提升了 30%，目前服务速度超过 1200 tokens/秒。这一性能提升表明 OpenAI 在优化其大型语言模型推理效率方面取得了显著进展。更快的模型服务速度能够改善用户体验，并降低运营成本。
+> 这篇文章探讨了在市场尚未存在的情况下，如何构建产品和服务，并以披萨和 CSV 文件为例进行了说明。
 
-💡 **为什么值得读**: 了解OpenAI在LLM性能优化方面的最新进展。
+💡 **为什么值得读**: 如果你正在考虑如何创造新的市场需求，这篇文章可能会给你带来一些启发。
 
-🏷️ GPT-5.3, Codex, performance, tokens per second
+🏷️ capitalism, markets, innovation, CSV
 
 ---
 
@@ -46,18 +46,17 @@
 
 | 扫描源 | 抓取文章 | 时间范围 | 精选 |
 |:---:|:---:|:---:|:---:|
-| 89/92 | 2504 篇 → 23 篇 | 48h | **15 篇** |
+| 88/92 | 2495 篇 → 16 篇 | 48h | **15 篇** |
 
 ### 分类分布
 
 ```mermaid
 pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 5
-    "📝 其他" : 4
+    "📝 其他" : 5
+    "🤖 AI / ML" : 4
     "⚙️ 工程" : 3
-    "💡 观点 / 杂谈" : 2
-    "🔒 安全" : 1
+    "💡 观点 / 杂谈" : 3
 ```
 
 ### 高频关键词
@@ -65,195 +64,193 @@ pie showData
 ```mermaid
 xychart-beta horizontal
     title "高频关键词"
-    x-axis ["phishing", "starkiller", "mfa", "login pages", "llama 3.1", "taalas", "hardware", "ai", "gpt-5.3", "codex", "performance", "tokens per second"]
-    y-axis "出现次数" 0 --> 3
-    bar [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    x-axis ["codex", "openai", "bitcoin", "mining", "certificate", "git", "repository", "ci/cd", "configuration", "terminology", "capitalism", "markets"]
+    y-axis "出现次数" 0 --> 4
+    bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]
 ```
 
 <details>
 <summary>📈 纯文本关键词图（终端友好）</summary>
 
 ```
-phishing    │ ████████████████████ 1
-starkiller  │ ████████████████████ 1
-mfa         │ ████████████████████ 1
-login pages │ ████████████████████ 1
-llama 3.1   │ ████████████████████ 1
-taalas      │ ████████████████████ 1
-hardware    │ ████████████████████ 1
-ai          │ ████████████████████ 1
-gpt-5.3     │ ████████████████████ 1
-codex       │ ████████████████████ 1
+codex         │ ████████████████████ 2
+openai        │ ████████████████████ 2
+bitcoin       │ ████████████████████ 2
+mining        │ ████████████████████ 2
+certificate   │ ████████████████████ 2
+git           │ ██████████░░░░░░░░░░ 1
+repository    │ ██████████░░░░░░░░░░ 1
+ci/cd         │ ██████████░░░░░░░░░░ 1
+configuration │ ██████████░░░░░░░░░░ 1
+terminology   │ ██████████░░░░░░░░░░ 1
 ```
 
 </details>
 
 ### 🏷️ 话题标签
 
-**phishing**(1) · **starkiller**(1) · **mfa**(1) · login pages(1) · llama 3.1(1) · taalas(1) · hardware(1) · ai(1) · gpt-5.3(1) · codex(1) · performance(1) · tokens per second(1) · ggml.ai(1) · hugging face(1) · local ai(1) · georgi gerganov(1) · claude code(1) · prompt caching(1) · latency(1) · cost(1)
-
----
-
-## 🤖 AI / ML
-
-### 1. Taalas 以每秒 17,000 个 tokens 的速度提供 Llama 3.1 8B 模型服务
-
-[Taalas serves Llama 3.1 8B at 17,000 tokens/second](https://simonwillison.net/2026/Feb/20/taalas/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 24/30
-
-> 加拿大初创公司 Taalas 发布了其首款产品，这是一款 Llama 3.1 8B 模型的定制硬件实现，能够以惊人的 17,000 tokens/秒的速度运行。该硬件加速方案显著提升了 Llama 3.1 8B 模型的推理速度。这表明专用硬件在加速特定 AI 模型方面具有巨大潜力。
-
-🏷️ Llama 3.1, Taalas, hardware, AI
-
----
-
-### 2. Thibault Sottiaux 引言
-
-[Quoting Thibault Sottiaux](https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything) — **simonwillison.net** · 22 小时前 · ⭐ 23/30
-
-> OpenAI 的 Thibault Sottiaux 宣布 GPT-5.3-Codex-Spark 的速度提升了 30%，目前服务速度超过 1200 tokens/秒。这一性能提升表明 OpenAI 在优化其大型语言模型推理效率方面取得了显著进展。更快的模型服务速度能够改善用户体验，并降低运营成本。
-
-🏷️ GPT-5.3, Codex, performance, tokens per second
-
----
-
-### 3. ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展
-
-[ggml.ai joins Hugging Face to ensure the long-term progress of Local AI](https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 22/30
-
-> ggml.ai 加入 Hugging Face，旨在推动本地 AI 的长期发展。Georgi Gerganov 开发的 llama.cpp 使得在消费级硬件上运行本地 LLM 成为可能，对本地模型领域产生了深远的影响。此次收购预示着 Hugging Face 将进一步加强其在本地 AI 领域的投入，并可能加速相关技术的发展。
-
-🏷️ ggml.ai, Hugging Face, Local AI, Georgi Gerganov
-
----
-
-### 4. Thariq Shihipar 引言
-
-[Quoting Thariq Shihipar](https://simonwillison.net/2026/Feb/20/thariq-shihipar/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 22/30
-
-> Claude Code 等长期运行的 Agentic 产品得益于 prompt 缓存技术，该技术能够复用先前 roundtrip 的计算结果，从而显著降低延迟和成本。Claude Code 将整个 harness 构建在 prompt 缓存之上。高 prompt 缓存命中率降低了成本，并有助于为订阅计划创建更慷慨的速率限制。
-
-🏷️ Claude Code, prompt caching, latency, cost
-
----
-
-### 5. 高级版：对 Anthropic 的差评指南
-
-[Premium: The Hater's Guide to Anthropic](https://www.wheresyoured.at/premium-the-haters-guide-to-anthropic/) — **wheresyoured.at** · 1 天前 · ⭐ 21/30
-
-> Dario Amodei 和其他前 OpenAI 研究人员于 2021 年 5 月成立了 Anthropic，致力于构建最安全的（也可能是最令人讨厌的）大型语言模型公司。文章可能以幽默或批判的角度分析了 Anthropic 及其产品。
-
-🏷️ Anthropic, LLM, AI safety
+**codex**(2) · **openai**(2) · **bitcoin**(2) · mining(2) · certificate(2) · git(1) · repository(1) · ci/cd(1) · configuration(1) · terminology(1) · capitalism(1) · markets(1) · innovation(1) · csv(1) · andrej karpathy(1) · claws(1) · mac mini(1) · difficulty(1) · fibonacci(1) · algorithm(1)
 
 ---
 
 ## 📝 其他
 
-### 6. Andrej Karpathy 谈论 “Claws”
+### 1. 比特币挖矿难度
 
-[Andrej Karpathy talks about "Claws"](https://simonwillison.net/2026/Feb/21/claws/#atom-everything) — **simonwillison.net** · 23 小时前 · ⭐ 21/30
+[Bitcoin mining difficulty](https://www.johndcook.com/blog/2026/02/22/bitcoin-mining-difficulty/) — **johndcook.com** · 4 小时前 · ⭐ 19/30
 
-> Andrej Karpathy 发推文谈论购买 Mac Mini 以尝试 Claws。他认为 Claws 就像 LLM agents 是 LLM 之上的新层一样，是 LLM 之上的新层。Claws 是一种新的编程范式，值得关注。
+> 本文讨论了比特币挖矿难度。比特币网络哈希率目前约为每秒一 Zettahash (10^21 hashes)。为了保持区块生成速度相对稳定在每 10 分钟一个区块左右，比特币挖矿难度会随时间调整。文章展示了挖矿难度随时间变化的图表。
 
-🏷️ Karpathy, Mac Mini, Claws
-
----
-
-### 7. OpenBenches 在 FOSDEM
-
-[OpenBenches at FOSDEM](https://shkspr.mobi/blog/2026/02/openbenches-at-fosdem/) — **shkspr.mobi** · 11 小时前 · ⭐ 17/30
-
-> 作者在 FOSDEM 上做了一个关于 OpenBenches 项目的快速闪电演讲。由于音视频团队的努力，视频仍然缺失了一部分。作者使用自己的录音和 zipkid 拍摄的照片，使用 Flowblade 视频编辑器重建了视频。感谢 Edward Betts 运行开发室并提供显示笔记本电脑。
-
-🏷️ OpenBenches, FOSDEM, Flowblade
+🏷️ Bitcoin, mining, difficulty
 
 ---
 
-### 8. 为我的博客添加 TILs、发布、博物馆、工具和研究等“节拍”
+### 2. Exahash, Zettahash, Yottahash
 
-[Adding TILs, releases, museums, tools and research to my blog](https://simonwillison.net/2026/Feb/20/beats/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 16/30
+[Exahash, Zettahash, Yottahash](https://www.johndcook.com/blog/2026/02/22/zettahash/) — **johndcook.com** · 5 小时前 · ⭐ 18/30
 
-> 作者为自己的博客增加了一个名为“节拍”（beats）的新功能，用于展示其在其他在线平台的活动。这个功能增加了五种新的内容类型，分别对应于作者在其他地方的活动，包括 TILs (Today I Learned)、软件发布、博物馆参观、使用的工具和进行的研究。这些“节拍”以列表形式展示在博客上，方便读者了解作者的最新动态。
+> 本文讨论了密码学哈希函数的发展，以及比特币挖矿对哈希计算的需求。目前，全球每秒计算的哈希数达到了惊人的 1,000,000,000,000,000,000,000 (一 Zettahash)。文章解释了 Exahash、Zettahash 和 Yottahash 这些单位的含义。
 
-🏷️ blog, beats, online activity
+🏷️ hash functions, Bitcoin, mining
 
 ---
 
-### 9. 在你的日历中追踪塞尔达发布周年纪念日
+### 3. OpenBenches 在 FOSDEM 大会
 
-[Track Zelda release anniversaries in your calendar](https://evanhahn.com/zelda-anniversary-calendar/) — **evanhahn.com** · 1 天前 · ⭐ 15/30
+[OpenBenches at FOSDEM](https://shkspr.mobi/blog/2026/02/openbenches-at-fosdem/) — **shkspr.mobi** · 1 天前 · ⭐ 16/30
 
-> 为了纪念初代《塞尔达传说》发售 40 周年，并追踪其他塞尔达游戏的周年纪念日，作者创建了一个日历，其中包含了所有塞尔达游戏的发布周年纪念日。用户可以通过订阅提供的 URL (https://evanhahn.com/tape/zelda_anniversaries.ics) 将该日历添加到自己的日历应用中，从而在每个游戏发布周年纪念日收到提醒。
+> 作者在 FOSDEM 大会上做了一个关于 OpenBenches 项目的闪电演讲，但视频缺失了一部分。为了弥补这一遗憾，作者利用自己的录音和 zipkid 拍摄的照片，使用 Flowblade 视频编辑器重新制作了视频。感谢 Edward Betts 运行开发室并提供展示笔记本电脑。该项目旨在记录和分享公共长椅的信息。
 
-🏷️ Zelda, anniversary, calendar
+🏷️ OpenBenches, FOSDEM, video editing
+
+---
+
+### 4. 第 1000 万个斐波那契数
+
+[10,000,000th Fibonacci number](https://www.johndcook.com/blog/2026/02/21/f10000000/) — **johndcook.com** · 23 小时前 · ⭐ 15/30
+
+> 这篇文章讨论了计算第 1000 万个斐波那契数 (n = 10,000,000) 的耗时问题，并使用了辅助数据（证书）来加速验证计算结果的正确性。作者使用 `fib_mpmath(n)` 函数计算了该斐波那契数，并记录了计算时间。文章旨在探讨如何通过辅助数据来优化大规模计算的验证过程。
+
+🏷️ Fibonacci number, certificate, timing
+
+---
+
+### 5. Nerd Quiz #4
+
+[Nerd Quiz #4](https://susam.net/code/news/nq/4.0.0.html) — **susam.net** · 1 天前 · ⭐ 15/30
+
+> Nerd Quiz #4 是一个单页 HTML 应用，旨在通过简短的测验来衡量你的极客程度。本次更新引入了五个新问题，涵盖了计算历史、图论和 Unix 等多个主题。用户可以通过访问 Nerd Quiz 网站参与测验，并在社区讨论页面进行交流。
+
+🏷️ quiz, nerd, geek, HTML
+
+---
+
+## 🤖 AI / ML
+
+### 6. 我对 Codex 的理解
+
+[How I think about Codex](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything) — **simonwillison.net** · 8 小时前 · ⭐ 20/30
+
+> 本文阐述了 OpenAI 的 APAC 开发者体验工程师 Gabriel Chua 对“Codex”一词的理解。Codex 在 OpenAI 生态系统中可以指代多种不同的事物，容易造成混淆。Chua 认为 Codex 本质上是 OpenAI 的软件工程代理，可以通过多种接口访问，并且是一个模型加上指令的组合。
+
+🏷️ Codex, OpenAI, terminology
+
+---
+
+### 7. Andrej Karpathy 谈论 "Claws"
+
+[Andrej Karpathy talks about "Claws"](https://simonwillison.net/2026/Feb/21/claws/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 19/30
+
+> Andrej Karpathy 在 Twitter 上发表了一篇关于购买 Mac Mini 来研究 Claws 的短文。他提到苹果商店的 Mac Mini 销量火爆，但很多人并不清楚它的用途。Karpathy 认为 Claws 就像 LLM agents 是 LLM 的一个新层级一样，代表着一种新的技术方向。
+
+🏷️ Andrej Karpathy, Claws, Mac Mini
+
+---
+
+### 8. 引用 Thibault Sottiaux 的话
+
+[Quoting Thibault Sottiaux](https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 18/30
+
+> OpenAI 的 Thibault Sottiaux 透露，GPT-5.3-Codex-Spark 的速度提高了约 30%，现在可以达到每秒超过 1200 个 tokens 的处理速度。
+
+🏷️ GPT, Codex, performance
+
+---
+
+### 9. 英伟达只是被邀请投资
+
+[Nvidia was only invited to invest](https://idiallo.com/byte-size/nvidia-was-only-invited-to-invest?src=feed) — **idiallo.com** · 1 天前 · ⭐ 16/30
+
+> 本文指出，英伟达对 OpenAI 的 1000 亿美元投资并非承诺，而仅仅是邀请。此前流传的 AI 公司循环投资图显示，英伟达投资 OpenAI，OpenAI 投资 Oracle，Oracle 再投资英伟达。英伟达 CEO 黄仁勋表示从未做出过投资承诺。
+
+🏷️ Nvidia, OpenAI, investment
 
 ---
 
 ## ⚙️ 工程
 
-### 10. 自定义对话框管理器关闭自身的方式：检测 ESC 键，首次（失败）尝试
+### 10. Forge 特定的仓库文件夹
 
-[Customizing the ways the dialog manager dismisses itself: Detecting the ESC key, first (failed) attempt](https://devblogs.microsoft.com/oldnewthing/20260220-00/?p=112074) — **devblogs.microsoft.com/oldnewthing** · 1 天前 · ⭐ 20/30
+[Forge-Specific Repository Folders](https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html) — **nesbitt.io** · 14 小时前 · ⭐ 23/30
 
-> 本文讨论了自定义对话框管理器关闭自身的方式，重点介绍了检测 ESC 键的首次尝试，但以失败告终。文章涉及异步键盘状态的嗅探。该文章可能探讨了 Windows 编程中处理键盘事件的细节和挑战。
+> 本文介绍了 Git 代码托管平台（Forge）中一些特殊的“魔法文件夹”的作用。这些文件夹包括 `.github/`、`.gitlab/`、`.gitea/`、`.forgejo/` 和 `.bitbucket/`。它们允许开发者针对特定的代码托管平台定制仓库的行为，例如配置 CI/CD 流程、问题模板等。了解这些文件夹的用途可以帮助开发者更好地利用不同平台的特性，提高开发效率。
 
-🏷️ dialog manager, ESC key, keyboard state
-
----
-
-### 11. 计算大的、经过认证的斐波那契数
-
-[Computing big, certified Fibonacci numbers](https://www.johndcook.com/blog/2026/02/21/big-certified-fibonacci/) — **johndcook.com** · 5 小时前 · ⭐ 20/30
-
-> 本文介绍了一种计算大的斐波那契数的新方法，并生成一个证书来验证斐波那契数的计算是否正确。该方法不同于以往的方法，并且在计算过程中生成证书。虽然没有实际应用场景，但展示了一种严谨的计算和验证方法。
-
-🏷️ Fibonacci numbers, certificate, algorithm
+🏷️ git, repository, CI/CD, configuration
 
 ---
 
-### 12. 代码注释换行
+### 11. 计算大型、可验证的斐波那契数
 
-[Wrapping Code Comments](https://matklad.github.io/2026/02/21/wrapping-code-comments.html) — **matklad.github.io** · 1 天前 · ⭐ 15/30
+[Computing big, certified Fibonacci numbers](https://www.johndcook.com/blog/2026/02/21/big-certified-fibonacci/) — **johndcook.com** · 1 天前 · ⭐ 19/30
 
-> 文章作者分享了一个关于代码注释换行的个人发现。
+> 本文介绍了一种计算大型斐波那契数的新方法，并能同时生成一个证书来验证计算结果的正确性。文章回顾了之前关于计算大型斐波那契数和创建验证证书的方法，并提出了一个不同的、能同时生成证书的计算方法。
 
-🏷️ code comments, wrapping
+🏷️ Fibonacci, algorithm, certificate, verification
+
+---
+
+### 12. Sentry 赞助
+
+[Sentry](https://sentry.io/resources/ios-workshop-jan-2026/?utm_source=daringfireball&amp;utm_medium=paid-display&amp;utm_campaign=general-fy27q1-evergreen&amp;utm_content=static-ad-mobilerss-trysentry) — **daringfireball.net** · 3 小时前 · ⭐ 15/30
+
+> Sentry 赞助了 Daring Fireball，并提供了一个名为“Sentry 中 iOS 的崩溃报告、追踪和日志”的在线研讨会。该研讨会旨在帮助开发者了解如何在 Sentry 中关联减速、崩溃和用户体验，从而高效地发现高优先级移动问题，并避免警报疲劳。通过日志和面包屑重现崩溃场景，并找到性能瓶颈的原因是研讨会的核心内容。开发者可以通过观看该研讨会，学习如何利用 Sentry 提升 iOS 应用的质量。
+
+🏷️ Sentry, iOS, crash reporting
 
 ---
 
 ## 💡 观点 / 杂谈
 
-### 13. 鲸落
+### 13. 资本主义的伟大拉链
 
-[Whale Fall](https://nesbitt.io/2026/02/21/whale-fall.html) — **nesbitt.io** · 1 天前 · ⭐ 22/30
+[The Great Zipper of Capitalism](https://worksonmymachine.ai/p/the-great-zipper-of-capitalism) — **worksonmymachine.substack.com** · 9 小时前 · ⭐ 20/30
 
-> 本文探讨了一个大型开源项目消亡后会发生什么。
+> 这篇文章探讨了在市场尚未存在的情况下，如何构建产品和服务，并以披萨和 CSV 文件为例进行了说明。
 
-🏷️ open source, project death, community
-
----
-
-### 14. 英伟达只是被邀请投资
-
-[Nvidia was only invited to invest](https://idiallo.com/byte-size/nvidia-was-only-invited-to-invest?src=feed) — **idiallo.com** · 25 分钟前 · ⭐ 16/30
-
-> 文章指出英伟达 CEO 黄仁勋否认了之前关于英伟达、OpenAI 和 Oracle 之间循环投资的承诺。此前流传的图表显示，英伟达将投资 1000 亿美元给 OpenAI，OpenAI 将投资 3000 亿美元给 Oracle，然后 Oracle 再投资回英伟达。黄仁勋表示这并非一项承诺，只是被邀请投资。
-
-🏷️ Nvidia, OpenAI, investment, AI companies
+🏷️ capitalism, markets, innovation, CSV
 
 ---
 
-## 🔒 安全
+### 14. 万物口述理论
 
-### 15. “星际杀手”钓鱼服务：代理真实登录页面和多因素认证
+[The Orality Theory of Everything](https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/?utm_source=feed) — **derekthompson.org** · 12 小时前 · ⭐ 18/30
 
-[‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA](https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/) — **krebsonsecurity.com** · 1 天前 · ⭐ 25/30
+> 阅读的衰落和社交媒体的兴起正在再次改变一个思考者所感受到的东西。
 
-> 传统的钓鱼网站通常是流行网站登录页面的静态副本，容易被反滥用组织和安全公司迅速查封。而新型钓鱼即服务（Phishing-as-a-Service）“星际杀手”（Starkiller）通过伪装链接加载目标品牌的真实网站，充当目标和合法站点之间的中继，从而绕过这些限制。它会转发受害者的用户名、密码和多因素认证信息。这种服务隐蔽性更强，更难被检测和取缔。
-
-🏷️ phishing, Starkiller, MFA, login pages
+🏷️ social media, reading, culture, cognition
 
 ---
 
-*生成于 2026-02-22 00:01 | 扫描 89 源 → 获取 2504 篇 → 精选 15 篇*
+### 15. 我们离 2010 年的愿景有多近？
+
+[How close are we to a vision for 2010?](https://shkspr.mobi/blog/2026/02/how-close-are-we-to-a-vision-for-2010/) — **shkspr.mobi** · 11 小时前 · ⭐ 14/30
+
+> 欧盟 IST 顾问小组在 25 年前发布了一篇关于“环境智能”未来的论文。在加密货币骗局和人工智能炒作之前，人们曾认为计算机将无处不在且高度集成，从而实现“普适计算”的梦想。ISTAG 发布了一篇名为“环境场景”的乐观论文，描绘了未来的愿景。
+
+🏷️ Ambient Intelligence, Ubiquitous Computing, future
+
+---
+
+*生成于 2026-02-23 00:01 | 扫描 88 源 → 获取 2495 篇 → 精选 15 篇*
 *基于 [Hacker News Popularity Contest 2025](https://refactoringenglish.com/tools/hn-popularity/) RSS 源列表，由 [Andrej Karpathy](https://x.com/karpathy) 推荐*
 *由「懂点儿AI」制作，欢迎关注同名微信公众号获取更多 AI 实用技巧 💡*
