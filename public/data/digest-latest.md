@@ -1,44 +1,44 @@
-# 📰 AI 博客每日精选 — 2026-02-23
+# 📰 AI 博客每日精选 — 2026-02-24
 
 > 来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15
 
 ## 📝 今日看点
 
-今日看点：AI领域持续火热，GPT模型速度再获突破，英伟达与OpenAI的投资关系引人关注。同时，比特币挖矿难度和哈希算力持续攀升，反映了加密货币领域的活跃度。此外，开发者需关注代码托管平台中特殊文件夹的作用，提升开发效率。
+今日看点：AI 编码代理正加速软件开发，但其效能、安全及发展方向引发广泛讨论。一方面，AI 辅助编程降低了代码编写成本，另一方面，生成式 AI 的局限性、潜在危害以及模型持续学习的难题也日益凸显。行业对 AI 发展路径的反思和对负责任 AI 的呼吁成为重要趋势。
 
 ---
 
 ## 🏆 今日必读
 
-🥇 **Forge 特定的仓库文件夹**
+🥇 **Ladybird 采用 Rust，AI 助力**
 
-[Forge-Specific Repository Folders](https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html) — nesbitt.io · 14 小时前 · ⚙️ 工程
+[Ladybird adopts Rust, with help from AI](https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything) — simonwillison.net · 5 小时前 · ⚙️ 工程
 
-> 本文介绍了 Git 代码托管平台（Forge）中一些特殊的“魔法文件夹”的作用。这些文件夹包括 `.github/`、`.gitlab/`、`.gitea/`、`.forgejo/` 和 `.bitbucket/`。它们允许开发者针对特定的代码托管平台定制仓库的行为，例如配置 CI/CD 流程、问题模板等。了解这些文件夹的用途可以帮助开发者更好地利用不同平台的特性，提高开发效率。
+> Ladybird 浏览器正在进行一项雄心勃勃的编码项目，该项目利用 AI 编码代理实现关键代码的移植。由于 Swift 在 Apple 生态系统之外的平台支持不够成熟，Ladybird 决定转向内存安全的 Rust 语言。项目首先使用 AI 辅助移植了一个关键库，展示了编码代理在复杂项目中的高级应用。这一举措旨在提升 Ladybird 的性能和安全性，并探索 AI 在代码开发中的潜力。
 
-💡 **为什么值得读**: 如果你经常使用多个 Git 代码托管平台，了解这些平台特定的文件夹能让你更高效地管理你的项目。
+💡 **为什么值得读**: 了解 Ladybird 如何利用 AI 和 Rust 改进浏览器开发，对于关注未来软件开发趋势的开发者来说很有价值。
 
-🏷️ git, repository, CI/CD, configuration
+🏷️ Ladybird, Rust, AI, coding agents
 
-🥈 **我对 Codex 的理解**
+🥈 **Claude C 编译器：它揭示了软件的未来**
 
-[How I think about Codex](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything) — simonwillison.net · 8 小时前 · 🤖 AI / ML
+[The Claude C Compiler: What It Reveals About the Future of Software](https://simonwillison.net/2026/Feb/22/ccc/#atom-everything) — simonwillison.net · 1 天前 · ⚙️ 工程
 
-> 本文阐述了 OpenAI 的 APAC 开发者体验工程师 Gabriel Chua 对“Codex”一词的理解。Codex 在 OpenAI 生态系统中可以指代多种不同的事物，容易造成混淆。Chua 认为 Codex 本质上是 OpenAI 的软件工程代理，可以通过多种接口访问，并且是一个模型加上指令的组合。
+> Anthropic 的 Nicholas Carlini 使用并行 Claude 构建了一个 C 编译器，该编译器基于最新的 Opus 4.6。Chris Lattner (Swift, LLVM, Clang, Mojo) 对 C 编译器有着深刻的理解。该项目旨在探索 AI 在编译器开发中的潜力，并揭示未来软件开发的新方向。
 
-💡 **为什么值得读**: 如果你对 OpenAI 的 Codex 技术感兴趣，这篇文章能帮助你理清关于 Codex 的一些概念。
+💡 **为什么值得读**: 了解 Claude C 编译器的构建过程和意义，可以洞察 AI 如何改变编译器技术和软件开发的未来。
 
-🏷️ Codex, OpenAI, terminology
+🏷️ Claude C Compiler, Anthropic, software
 
-🥉 **资本主义的伟大拉链**
+🥉 **编写关于 Agentic Engineering Patterns 的文章**
 
-[The Great Zipper of Capitalism](https://worksonmymachine.ai/p/the-great-zipper-of-capitalism) — worksonmymachine.substack.com · 9 小时前 · 💡 观点 / 杂谈
+[Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything) — simonwillison.net · 6 小时前 · 🤖 AI / ML
 
-> 这篇文章探讨了在市场尚未存在的情况下，如何构建产品和服务，并以披萨和 CSV 文件为例进行了说明。
+> 作者启动了一个新项目，旨在收集和记录 Agentic Engineering Patterns，这些模式和实践旨在帮助开发者在使用 Claude Code 和 OpenAI Codex 等编码代理时获得最佳结果。Agentic Engineering 指的是使用编码代理构建软件，其核心特征是代理能够自主生成和修改代码。该项目旨在为开发者提供指导，帮助他们有效地利用编码代理来提高软件开发效率。
 
-💡 **为什么值得读**: 如果你正在考虑如何创造新的市场需求，这篇文章可能会给你带来一些启发。
+💡 **为什么值得读**: 如果你正在探索如何利用 AI 编码代理来提升软件开发效率，那么了解 Agentic Engineering Patterns 将会很有帮助。
 
-🏷️ capitalism, markets, innovation, CSV
+🏷️ Agentic Engineering, patterns, coding agents
 
 ---
 
@@ -46,17 +46,17 @@
 
 | 扫描源 | 抓取文章 | 时间范围 | 精选 |
 |:---:|:---:|:---:|:---:|
-| 88/92 | 2495 篇 → 16 篇 | 48h | **15 篇** |
+| 86/92 | 2447 篇 → 41 篇 | 48h | **15 篇** |
 
 ### 分类分布
 
 ```mermaid
 pie showData
     title "文章分类分布"
-    "📝 其他" : 5
-    "🤖 AI / ML" : 4
+    "🤖 AI / ML" : 8
     "⚙️ 工程" : 3
     "💡 观点 / 杂谈" : 3
+    "📝 其他" : 1
 ```
 
 ### 高频关键词
@@ -64,193 +64,193 @@ pie showData
 ```mermaid
 xychart-beta horizontal
     title "高频关键词"
-    x-axis ["codex", "openai", "bitcoin", "mining", "certificate", "git", "repository", "ci/cd", "configuration", "terminology", "capitalism", "markets"]
-    y-axis "出现次数" 0 --> 4
-    bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]
+    x-axis ["coding agents", "ai", "agentic engineering", "ladybird", "rust", "claude c compiler", "anthropic", "software", "patterns", "generative ai", "scam", "hype"]
+    y-axis "出现次数" 0 --> 5
+    bar [3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
 <details>
 <summary>📈 纯文本关键词图（终端友好）</summary>
 
 ```
-codex         │ ████████████████████ 2
-openai        │ ████████████████████ 2
-bitcoin       │ ████████████████████ 2
-mining        │ ████████████████████ 2
-certificate   │ ████████████████████ 2
-git           │ ██████████░░░░░░░░░░ 1
-repository    │ ██████████░░░░░░░░░░ 1
-ci/cd         │ ██████████░░░░░░░░░░ 1
-configuration │ ██████████░░░░░░░░░░ 1
-terminology   │ ██████████░░░░░░░░░░ 1
+coding agents       │ ████████████████████ 3
+ai                  │ █████████████░░░░░░░ 2
+agentic engineering │ █████████████░░░░░░░ 2
+ladybird            │ ███████░░░░░░░░░░░░░ 1
+rust                │ ███████░░░░░░░░░░░░░ 1
+claude c compiler   │ ███████░░░░░░░░░░░░░ 1
+anthropic           │ ███████░░░░░░░░░░░░░ 1
+software            │ ███████░░░░░░░░░░░░░ 1
+patterns            │ ███████░░░░░░░░░░░░░ 1
+generative ai       │ ███████░░░░░░░░░░░░░ 1
 ```
 
 </details>
 
 ### 🏷️ 话题标签
 
-**codex**(2) · **openai**(2) · **bitcoin**(2) · mining(2) · certificate(2) · git(1) · repository(1) · ci/cd(1) · configuration(1) · terminology(1) · capitalism(1) · markets(1) · innovation(1) · csv(1) · andrej karpathy(1) · claws(1) · mac mini(1) · difficulty(1) · fibonacci(1) · algorithm(1)
-
----
-
-## 📝 其他
-
-### 1. 比特币挖矿难度
-
-[Bitcoin mining difficulty](https://www.johndcook.com/blog/2026/02/22/bitcoin-mining-difficulty/) — **johndcook.com** · 4 小时前 · ⭐ 19/30
-
-> 本文讨论了比特币挖矿难度。比特币网络哈希率目前约为每秒一 Zettahash (10^21 hashes)。为了保持区块生成速度相对稳定在每 10 分钟一个区块左右，比特币挖矿难度会随时间调整。文章展示了挖矿难度随时间变化的图表。
-
-🏷️ Bitcoin, mining, difficulty
-
----
-
-### 2. Exahash, Zettahash, Yottahash
-
-[Exahash, Zettahash, Yottahash](https://www.johndcook.com/blog/2026/02/22/zettahash/) — **johndcook.com** · 5 小时前 · ⭐ 18/30
-
-> 本文讨论了密码学哈希函数的发展，以及比特币挖矿对哈希计算的需求。目前，全球每秒计算的哈希数达到了惊人的 1,000,000,000,000,000,000,000 (一 Zettahash)。文章解释了 Exahash、Zettahash 和 Yottahash 这些单位的含义。
-
-🏷️ hash functions, Bitcoin, mining
-
----
-
-### 3. OpenBenches 在 FOSDEM 大会
-
-[OpenBenches at FOSDEM](https://shkspr.mobi/blog/2026/02/openbenches-at-fosdem/) — **shkspr.mobi** · 1 天前 · ⭐ 16/30
-
-> 作者在 FOSDEM 大会上做了一个关于 OpenBenches 项目的闪电演讲，但视频缺失了一部分。为了弥补这一遗憾，作者利用自己的录音和 zipkid 拍摄的照片，使用 Flowblade 视频编辑器重新制作了视频。感谢 Edward Betts 运行开发室并提供展示笔记本电脑。该项目旨在记录和分享公共长椅的信息。
-
-🏷️ OpenBenches, FOSDEM, video editing
-
----
-
-### 4. 第 1000 万个斐波那契数
-
-[10,000,000th Fibonacci number](https://www.johndcook.com/blog/2026/02/21/f10000000/) — **johndcook.com** · 23 小时前 · ⭐ 15/30
-
-> 这篇文章讨论了计算第 1000 万个斐波那契数 (n = 10,000,000) 的耗时问题，并使用了辅助数据（证书）来加速验证计算结果的正确性。作者使用 `fib_mpmath(n)` 函数计算了该斐波那契数，并记录了计算时间。文章旨在探讨如何通过辅助数据来优化大规模计算的验证过程。
-
-🏷️ Fibonacci number, certificate, timing
-
----
-
-### 5. Nerd Quiz #4
-
-[Nerd Quiz #4](https://susam.net/code/news/nq/4.0.0.html) — **susam.net** · 1 天前 · ⭐ 15/30
-
-> Nerd Quiz #4 是一个单页 HTML 应用，旨在通过简短的测验来衡量你的极客程度。本次更新引入了五个新问题，涵盖了计算历史、图论和 Unix 等多个主题。用户可以通过访问 Nerd Quiz 网站参与测验，并在社区讨论页面进行交流。
-
-🏷️ quiz, nerd, geek, HTML
+**coding agents**(3) · **ai**(2) · **agentic engineering**(2) · ladybird(1) · rust(1) · claude c compiler(1) · anthropic(1) · software(1) · patterns(1) · generative ai(1) · scam(1) · hype(1) · ai agents(1) · web frameworks(1) · token efficiency(1) · benchmarking(1) · ai harms(1) · children(1) · platform responsibility(1) · continuous learning(1)
 
 ---
 
 ## 🤖 AI / ML
 
-### 6. 我对 Codex 的理解
+### 1. 编写关于 Agentic Engineering Patterns 的文章
 
-[How I think about Codex](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything) — **simonwillison.net** · 8 小时前 · ⭐ 20/30
+[Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything) — **simonwillison.net** · 6 小时前 · ⭐ 23/30
 
-> 本文阐述了 OpenAI 的 APAC 开发者体验工程师 Gabriel Chua 对“Codex”一词的理解。Codex 在 OpenAI 生态系统中可以指代多种不同的事物，容易造成混淆。Chua 认为 Codex 本质上是 OpenAI 的软件工程代理，可以通过多种接口访问，并且是一个模型加上指令的组合。
+> 作者启动了一个新项目，旨在收集和记录 Agentic Engineering Patterns，这些模式和实践旨在帮助开发者在使用 Claude Code 和 OpenAI Codex 等编码代理时获得最佳结果。Agentic Engineering 指的是使用编码代理构建软件，其核心特征是代理能够自主生成和修改代码。该项目旨在为开发者提供指导，帮助他们有效地利用编码代理来提高软件开发效率。
+
+🏷️ Agentic Engineering, patterns, coding agents
+
+---
+
+### 2. 事实证明，生成式 AI 是个骗局
+
+[Turns out Generative AI was a scam](https://garymarcus.substack.com/p/turns-out-generative-ai-was-a-scam) — **garymarcus.substack.com** · 9 小时前 · ⭐ 23/30
+
+> 文章认为生成式 AI 至少在目前远未达到人们期望的高度。
+
+🏷️ Generative AI, scam, hype
+
+---
+
+### 3. 哪些 Web 框架对于 AI 代理来说 Token 效率最高？
+
+[Which web frameworks are most token-efficient for AI agents?](https://martinalderson.com/posts/which-web-frameworks-are-most-token-efficient-for-ai-agents/?utm_source=rss) — **martinalderson.com** · 1 天前 · ⭐ 23/30
+
+> 作者对 19 个 Web 框架进行了基准测试，评估 AI 编码代理构建和扩展同一应用程序的效率。结果表明，极简框架的 Token 成本比全功能框架低 2.9 倍。这意味着在 AI 驱动的 Web 开发中，框架的选择会显著影响成本和效率。
+
+🏷️ AI agents, web frameworks, token efficiency, benchmarking
+
+---
+
+### 4. 采取行动应对 AI 危害
+
+[Taking action against AI harms](https://anildash.com/2026/02/23/taking-action-ai-harms/) — **anildash.com** · 21 分钟前 · ⭐ 23/30
+
+> 文章讨论了 AI 对儿童造成的危害，这些危害源于平台在创建 AI 产品时做出的不负责任的选择。文章呼吁追究这些公司的责任，并探讨如何采取行动来保护儿童免受 AI 危害。
+
+🏷️ AI harms, children, platform responsibility
+
+---
+
+### 5. 持续学习的难点在哪里？
+
+[What's so hard about continuous learning?](https://seangoedecke.com/continuous-learning/) — **seangoedecke.com** · 1 天前 · ⭐ 22/30
+
+> 文章探讨了 AI 模型在部署后无法持续学习的问题。与人类员工不同，AI 模型的权重在发布后就被冻结，只能通过上下文窗口进行有限的学习。这导致 AI 模型的能力始终停留在最初的水平，无法像人类一样随着时间的推移而积累经验和专业知识。
+
+🏷️ continuous learning, AI models, deployment
+
+---
+
+### 6. AI 实验室如何扩散
+
+[How AI Labs Proliferate](https://blog.jim-nielsen.com/2026/how-ai-labs-proliferate/) — **blog.jim-nielsen.com** · 1 天前 · ⭐ 22/30
+
+> 文章以幽默的方式描述了 AI 实验室的增殖现象：当存在多个竞争的 AI 实验室时，每个实验室都认为自己是“负责任的”，因此需要建立自己的实验室来确保 AI 的发展方向正确，结果导致竞争的实验室数量不断增加，就像 XKCD 漫画中关于标准的笑话一样。
+
+🏷️ AI labs, competition, standards
+
+---
+
+### 7. 回复机器人
+
+[Reply guy](https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything) — **simonwillison.net** · 11 小时前 · ⭐ 20/30
+
+> 文章指出 Twitter 上出现了一种新的骚扰现象：AI 机器人回复用户的推文，提供泛化、平庸的评论，并经常附带问题以“提高参与度”，浪费用户的时间。这类软件被称为“回复机器人”（reply guy）工具。
+
+🏷️ AI bots, Twitter, engagement
+
+---
+
+### 8. 我是如何看待 Codex 的
+
+[How I think about Codex](https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 20/30
+
+> 文章分享了 OpenAI 亚太地区开发者体验工程师 Gabriel Chua 对 Codex 术语的理解。Codex 可以指代 OpenAI 生态系统中的多种事物，简单来说，Codex 是 OpenAI 的软件工程代理，可以通过多种接口使用，而代理是模型加上指令。
 
 🏷️ Codex, OpenAI, terminology
 
 ---
 
-### 7. Andrej Karpathy 谈论 "Claws"
-
-[Andrej Karpathy talks about "Claws"](https://simonwillison.net/2026/Feb/21/claws/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 19/30
-
-> Andrej Karpathy 在 Twitter 上发表了一篇关于购买 Mac Mini 来研究 Claws 的短文。他提到苹果商店的 Mac Mini 销量火爆，但很多人并不清楚它的用途。Karpathy 认为 Claws 就像 LLM agents 是 LLM 的一个新层级一样，代表着一种新的技术方向。
-
-🏷️ Andrej Karpathy, Claws, Mac Mini
-
----
-
-### 8. 引用 Thibault Sottiaux 的话
-
-[Quoting Thibault Sottiaux](https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 18/30
-
-> OpenAI 的 Thibault Sottiaux 透露，GPT-5.3-Codex-Spark 的速度提高了约 30%，现在可以达到每秒超过 1200 个 tokens 的处理速度。
-
-🏷️ GPT, Codex, performance
-
----
-
-### 9. 英伟达只是被邀请投资
-
-[Nvidia was only invited to invest](https://idiallo.com/byte-size/nvidia-was-only-invited-to-invest?src=feed) — **idiallo.com** · 1 天前 · ⭐ 16/30
-
-> 本文指出，英伟达对 OpenAI 的 1000 亿美元投资并非承诺，而仅仅是邀请。此前流传的 AI 公司循环投资图显示，英伟达投资 OpenAI，OpenAI 投资 Oracle，Oracle 再投资英伟达。英伟达 CEO 黄仁勋表示从未做出过投资承诺。
-
-🏷️ Nvidia, OpenAI, investment
-
----
-
 ## ⚙️ 工程
 
-### 10. Forge 特定的仓库文件夹
+### 9. Ladybird 采用 Rust，AI 助力
 
-[Forge-Specific Repository Folders](https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html) — **nesbitt.io** · 14 小时前 · ⭐ 23/30
+[Ladybird adopts Rust, with help from AI](https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything) — **simonwillison.net** · 5 小时前 · ⭐ 24/30
 
-> 本文介绍了 Git 代码托管平台（Forge）中一些特殊的“魔法文件夹”的作用。这些文件夹包括 `.github/`、`.gitlab/`、`.gitea/`、`.forgejo/` 和 `.bitbucket/`。它们允许开发者针对特定的代码托管平台定制仓库的行为，例如配置 CI/CD 流程、问题模板等。了解这些文件夹的用途可以帮助开发者更好地利用不同平台的特性，提高开发效率。
+> Ladybird 浏览器正在进行一项雄心勃勃的编码项目，该项目利用 AI 编码代理实现关键代码的移植。由于 Swift 在 Apple 生态系统之外的平台支持不够成熟，Ladybird 决定转向内存安全的 Rust 语言。项目首先使用 AI 辅助移植了一个关键库，展示了编码代理在复杂项目中的高级应用。这一举措旨在提升 Ladybird 的性能和安全性，并探索 AI 在代码开发中的潜力。
 
-🏷️ git, repository, CI/CD, configuration
-
----
-
-### 11. 计算大型、可验证的斐波那契数
-
-[Computing big, certified Fibonacci numbers](https://www.johndcook.com/blog/2026/02/21/big-certified-fibonacci/) — **johndcook.com** · 1 天前 · ⭐ 19/30
-
-> 本文介绍了一种计算大型斐波那契数的新方法，并能同时生成一个证书来验证计算结果的正确性。文章回顾了之前关于计算大型斐波那契数和创建验证证书的方法，并提出了一个不同的、能同时生成证书的计算方法。
-
-🏷️ Fibonacci, algorithm, certificate, verification
+🏷️ Ladybird, Rust, AI, coding agents
 
 ---
 
-### 12. Sentry 赞助
+### 10. Claude C 编译器：它揭示了软件的未来
 
-[Sentry](https://sentry.io/resources/ios-workshop-jan-2026/?utm_source=daringfireball&amp;utm_medium=paid-display&amp;utm_campaign=general-fy27q1-evergreen&amp;utm_content=static-ad-mobilerss-trysentry) — **daringfireball.net** · 3 小时前 · ⭐ 15/30
+[The Claude C Compiler: What It Reveals About the Future of Software](https://simonwillison.net/2026/Feb/22/ccc/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 24/30
 
-> Sentry 赞助了 Daring Fireball，并提供了一个名为“Sentry 中 iOS 的崩溃报告、追踪和日志”的在线研讨会。该研讨会旨在帮助开发者了解如何在 Sentry 中关联减速、崩溃和用户体验，从而高效地发现高优先级移动问题，并避免警报疲劳。通过日志和面包屑重现崩溃场景，并找到性能瓶颈的原因是研讨会的核心内容。开发者可以通过观看该研讨会，学习如何利用 Sentry 提升 iOS 应用的质量。
+> Anthropic 的 Nicholas Carlini 使用并行 Claude 构建了一个 C 编译器，该编译器基于最新的 Opus 4.6。Chris Lattner (Swift, LLVM, Clang, Mojo) 对 C 编译器有着深刻的理解。该项目旨在探索 AI 在编译器开发中的潜力，并揭示未来软件开发的新方向。
 
-🏷️ Sentry, iOS, crash reporting
+🏷️ Claude C Compiler, Anthropic, software
+
+---
+
+### 11. 红/绿 TDD
+
+[Red/green TDD](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything) — **simonwillison.net** · 17 小时前 · ⭐ 21/30
+
+> 文章介绍了使用红/绿 TDD（测试驱动开发）模式来提升编码代理的效率。TDD 是一种编程风格，要求编写的每段代码都必须有相应的自动化测试来验证其正确性。最严格的 TDD 形式是测试优先开发，即先编写测试用例，再编写代码。通过这种方式，可以确保代码满足预期的功能，并减少错误。
+
+🏷️ TDD, red/green, coding agent
 
 ---
 
 ## 💡 观点 / 杂谈
 
-### 13. 资本主义的伟大拉链
+### 12. AI 领域的每个人都在用同样的原因构建错误的东西
 
-[The Great Zipper of Capitalism](https://worksonmymachine.ai/p/the-great-zipper-of-capitalism) — **worksonmymachine.substack.com** · 9 小时前 · ⭐ 20/30
+[Everyone in AI is building the wrong thing for the same reason](https://www.joanwestenberg.com/everyone-in-ai-is-building-the-wrong-thing-for-the-same-reason/) — **joanwestenberg.com** · 13 小时前 · ⭐ 22/30
 
-> 这篇文章探讨了在市场尚未存在的情况下，如何构建产品和服务，并以披萨和 CSV 文件为例进行了说明。
+> 文章指出，许多 AI 创始人都在加速前进，但他们普遍怀疑整个行业的发展方向并不完全正确，却又不知道如何摆脱这种困境。这种现象表明，AI 领域可能存在一些根本性的问题，导致开发者们都在朝着错误的方向努力。
 
-🏷️ capitalism, markets, innovation, CSV
-
----
-
-### 14. 万物口述理论
-
-[The Orality Theory of Everything](https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/?utm_source=feed) — **derekthompson.org** · 12 小时前 · ⭐ 18/30
-
-> 阅读的衰落和社交媒体的兴起正在再次改变一个思考者所感受到的东西。
-
-🏷️ social media, reading, culture, cognition
+🏷️ AI, industry, direction, innovation
 
 ---
 
-### 15. 我们离 2010 年的愿景有多近？
+### 13. 现在编写代码很便宜
 
-[How close are we to a vision for 2010?](https://shkspr.mobi/blog/2026/02/how-close-are-we-to-a-vision-for-2010/) — **shkspr.mobi** · 11 小时前 · ⭐ 14/30
+[Writing code is cheap now](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything) — **simonwillison.net** · 8 小时前 · ⭐ 21/30
 
-> 欧盟 IST 顾问小组在 25 年前发布了一篇关于“环境智能”未来的论文。在加密货币骗局和人工智能炒作之前，人们曾认为计算机将无处不在且高度集成，从而实现“普适计算”的梦想。ISTAG 发布了一篇名为“环境场景”的乐观论文，描绘了未来的愿景。
+> 文章指出，采用 Agentic Engineering 实践的最大挑战是适应“现在编写代码很便宜”这一事实所带来的后果。由于编码代理的出现，编写代码的成本大大降低，这需要开发者重新审视传统的软件工程习惯，并适应新的开发模式。
 
-🏷️ Ambient Intelligence, Ubiquitous Computing, future
+🏷️ Agentic Engineering, coding agents, productivity
 
 ---
 
-*生成于 2026-02-23 00:01 | 扫描 88 源 → 获取 2495 篇 → 精选 15 篇*
+### 14. 关于 Farcaster 的思考
+
+[Thoughts on Farcaster](https://www.joanwestenberg.com/thoughts-on-farcaster/) — **joanwestenberg.com** · 2 小时前 · ⭐ 21/30
+
+> 文章探讨了作者对 Farcaster 平台的思考，包括是否继续使用该平台。Farcaster 被认为是构建去中心化社交网络的可靠尝试之一。作者分享了自己对 Farcaster 的看法和感受，并试图找到继续使用或离开该平台的理由。
+
+🏷️ Farcaster, social network, decentralization
+
+---
+
+## 📝 其他
+
+### 15. 伦敦证券交易所：树莓派控股公司
+
+[London Stock Exchange: Raspberry Pi Holdings plc](https://simonwillison.net/2026/Feb/22/raspberry-pi-openclaw/#atom-everything) — **simonwillison.net** · 1 天前 · ⭐ 21/30
+
+> 文章展示了英国树莓派控股公司在伦敦证券交易所的股票价格走势图。该图显示，在截至 2 月 16 日的三个月内，树莓派的股价从 325 左右下跌至接近 260 的低点，然后突然大幅上涨。该图表反映了树莓派公司股票近期价格的剧烈波动。
+
+🏷️ Raspberry Pi, stock market, RPI
+
+---
+
+*生成于 2026-02-24 00:21 | 扫描 86 源 → 获取 2447 篇 → 精选 15 篇*
 *基于 [Hacker News Popularity Contest 2025](https://refactoringenglish.com/tools/hn-popularity/) RSS 源列表，由 [Andrej Karpathy](https://x.com/karpathy) 推荐*
 *由「懂点儿AI」制作，欢迎关注同名微信公众号获取更多 AI 实用技巧 💡*
